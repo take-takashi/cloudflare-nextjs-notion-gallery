@@ -1,6 +1,6 @@
 {
-  "image": "node:17.6.0-slim",
-  "name": "node:17.6.0-slim",
+  "image": "node:17.6.0",
+  "name": "node:17.6.0",
   "features": {},
   "extensions": [
     "hediet.vscode-drawio",
@@ -8,7 +8,13 @@
     "mechatroner.rainbow-csv",
     "redhat.vscode-yaml",
     "esbenp.prettier-vscode",
-    "donjayamanne.githistory"
+    "donjayamanne.githistory",
+    "KnisterPeter.vscode-commitizen",
+    "oderwat.indent-rainbow",
+    "2gua.rainbow-brackets",
+    "MS-CEINTL.vscode-language-pack-ja",
+    "PKief.material-icon-theme",
+    "dbaeumer.vscode-eslint"
   ],
   "settings": {
     "editor.tabSize": 2, // インデントタブサイズは2とする
@@ -19,10 +25,6 @@
       "source.fixAll.eslint": true // ファイル保存時、ESLint による自動フォーマット
     }
   },
-  "postCreateCommand": [
-    "npm ci"
-  ],
-  "postAttachCommand": [
-    "echo hello"
-  ]
+  "postCreateCommand": ["npm ci"], // devcontainer作成時に実行されるコマンド
+  "postAttachCommand": "echo hello" // codespaces接続時に実行されるコマンド
 }
