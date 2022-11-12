@@ -26,6 +26,7 @@ npm i @notionhq/client
 
 ## Next.js で設定すべき内容
 
+- tsconfig.json に"baseUrl": "."を追加する（import のルートを決められる）
 - API Routes を Edge runtime 用に書き換える
 
 ## Cloudflare pages の設定
