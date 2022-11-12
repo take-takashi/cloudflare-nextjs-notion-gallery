@@ -1,7 +1,6 @@
 {
   "image": "node:17.6.0",
   "name": "node:17.6.0",
-  "features": {},
   "extensions": [
     "hediet.vscode-drawio",
     "GrapeCity.gc-excelviewer",
@@ -26,5 +25,6 @@
     }
   },
   "postCreateCommand": ["npm ci"], // devcontainer作成時に実行されるコマンド
-  "postAttachCommand": "echo hello" // codespaces接続時に実行されるコマンド
+  // "postAttachCommand": "echo hello", // codespaces接続時に実行されるコマンド
+  "features": {}
 }
