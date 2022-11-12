@@ -17,6 +17,13 @@ npm i next@12.3.2
 echo 17.6.0 >> .node-version
 ```
 
+## nextapp
+
+```
+cd nextapp/
+npm i @notionhq/client
+```
+
 ## Next.js で設定すべき内容
 
 - API Routes を Edge runtime 用に書き換える
