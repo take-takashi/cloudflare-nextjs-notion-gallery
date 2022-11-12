@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextRequest } from 'next/server'
-import responseOk from '../../lib/functions'
+import responseOk from 'lib/functions'
 
 export const config = {
   runtime: 'experimental-edge',
