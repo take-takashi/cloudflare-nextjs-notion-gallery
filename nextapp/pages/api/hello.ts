@@ -7,5 +7,9 @@ export const config = {
 }
 
 export default function handler(req: NextRequest) {
-  return responseOk({ name: process.env.NEXT_RUNTIME, test: process.env.NOTION_API_API_TEST_DB })
+  return responseOk({
+    name: process.env.NEXT_RUNTIME,
+    test: process.env.NOTION_API_API_TEST_DB,
+    message: 'test message',
+  })
 }
